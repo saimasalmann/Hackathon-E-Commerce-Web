@@ -1,16 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-const Stan = () => {
+const DontMiss = () => {
   return (
-    <div>
-      <div className="mt-28 mb-14 pb-10">
-        <span className="text-xl font-semibold px-10 lg:px-16">
-          {`Don't`} Miss
-        </span>
+    <div className="container mx-auto px-3">
+      <div className="mt-10 mb-10  text-xl font-semibold ">
+          Don&apos;t Miss
       </div>
 
-      <div className="flex justify-center px-10">
+      <div className="flex justify-center ">
         <Image
           className=""
           src={"/bg-2.png"}
@@ -26,17 +24,17 @@ const Stan = () => {
         </span>
         <br />
         <br />
-
+ 
         <span>
           Your built-to-last, all-week wears—but with style only Jordan Brand
           can deliver.
         </span>
         <br />
-
-        <button className="btn ">Shop</button>
+ 
+        <button >Shop</button>
       </div>
     </div>
   );
 };
 
-export default Stan;
+export default DontMiss;

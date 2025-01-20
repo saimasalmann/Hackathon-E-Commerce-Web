@@ -1,112 +1,170 @@
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import { Heart, Lock,Menu, Search } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
+
 function Navbar() {
   return (
-    <header className="bg-[#F5F5F5] text-[#111111]">
-      {/* Top Navbar */}
-      <div className="max-w-[1440px] mx-auto bg-[#F5F5F5] flex flex-wrap justify-between items-center py-3 px-4 sm:px-6">
-        <Image
-          src="/Frame.png"
-          alt="logo"
-          width={300}
-          height={300}
-          className="w-[24px] h-[24px]"
-        />
-        <nav className="flex flex-wrap justify-center items-center text-black font-Helvetica text-[11px] font-medium gap-2 mt-2 sm:mt-0">
-          <Link href="/Store" className="px-2 py-1">
-            Find a Store
-          </Link>
-          <span className="hidden sm:inline">|</span>
-          <Link href="/ContactUs" className="px-2 py-1">
-            Help
-          </Link>
-          <span className="hidden sm:inline">|</span>
-          <Link href="/JoinUs" className="px-2 py-1">
-            Join Us
-          </Link>
-          <span className="hidden sm:inline">|</span>
-          <Link href="/SignUp" className="px-2 py-1">
-            Sign In
-          </Link>
-        </nav>
-      </div>
+    <nav className=" w-full bg-white text-[#111111]">
+     
 
-      {/* Bottom Navbar */}
-      <div className="bg-white">
-        <div className="max-w-[1440px] mx-auto bg-white flex flex-wrap justify-between items-center py-3 px-4 sm:px-6">
+        <div className="w-full container mx-auto bg-white flex items-center justify-between px-3 py-3  ">
           {/* Logo */}
           <Image
             src="/Vector (1).png"
             alt="logo"
             width={300}
             height={300}
-            className="w-[58.85px] h-[20.54px]"
+            className="w-[58.85px] h-[20.54px] "
           />
 
-          {/* Links and Search */}
-          <div className="flex flex-wrap items-center justify-between w-full lg:w-auto gap-4 mt-3 lg:mt-0">
             {/* Navigation Links */}
-            <div className="hidden lg:flex gap-4">
-              <Link href="#" className="px-2 py-1">
+            <div className=" hidden  md:flex items-center justify-center md:gap-1 text-[12px] lg:text-[14px] lg:gap-4">
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
                 New and Featured
               </Link>
-              <Link href="#" className="px-2 py-1">
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
                 Men
               </Link>
-              <Link href="#" className="px-2 py-1">
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
                 Women
               </Link>
-              <Link href="#" className="px-2 py-1">
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
                 Kids
               </Link>
-              <Link href="#" className="px-2 py-1">
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
                 Sale
               </Link>
-              <Link href="#" className="px-2 py-1">
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
                 SNKRS
               </Link>
             </div>
 
-            {/* Search Bar */}
-            <div className="flex-grow lg:flex-grow-0 lg:w-auto flex items-center rounded-full gap-4 px-4 bg-[#F5F5F5] w-full lg:max-w-sm">
-              <Image
-                src="/search.png"
-                alt="search-icon"
-                width={16}
-                height={16}
-                className="w-6 h-6"
-              />
-              <input
-                type="search"
-                placeholder="Search"
-                className="text-[15px] py-2 outline-none bg-[#F5F5F5] leading-4 font-medium text-[#CCCCCC] w-full"
-              />
-            </div>
-          </div>
+             {/* mobile view */}
+             
+              <div className=" relative block  w-full max-w-[200px] lg:hidden space-2">
+                <Search className="absolute top-2 left-2 text-gray-600" />
+                <Input placeholder="Search" className="w-full rounded-full  bg-[#F5F5F5] text-gray-400 border-none pl-10  text-[14px]" />
+              </div>
+            {/*main div  Search Bar heart and lock  */}
+            <div className=" hidden lg:flex gap-2 md:gap-4 items-center justify-between ">
+           
+           
+           
+           
+              <div className="relative flex gap-2">
+                <Search className="absolute top-2 left-2 text-gray-600" />
+                <Input placeholder="Search" className="rounded-full  bg-[#F5F5F5] text-gray-400 border-none pl-10  text-[14px]" />
+              </div>
 
-          {/* Icons (Heart and Lock) */}
-          <div className="hidden lg:flex items-center justify-between gap-5 mt-3 lg:mt-0">
+           
+           
+              {/* Icons (Heart and Lock) */}
+              <div className="flex items-center justify-between gap-3 ">
+                <Button
+                  variant={"outline"}
+                  size={"icon"}
+                  className="rounded-full border-none "
+                >
+                  <Heart  />
+                </Button>
+
+                <Button
+                  variant={"outline"}
+                  size={"icon"}
+                   className="rounded-full border-none "
+                >
+                  <Lock />
+                </Button>
+              </div>
+             
+
+          
+     </div>
+              
+
+              <Sheet>
+      <SheetTrigger className="flex md:hidden" >
+        <Menu /> 
+      </SheetTrigger>
+      <SheetContent className="bg-white">
+        <SheetHeader>
+          <SheetTitle>
             <Image
-              src="/heart-icon.png"
-              alt="heart-icon"
-              width={16}
-              height={16}
-              className="w-6 h-6"
-            />
-            <Image
-              src="/lock-icon.png"
-              alt="lock-icon"
-              width={16}
-              height={16}
-              className="w-6 h-6"
-            />
+                      src="/Frame.png"
+                      alt="logo"
+                      width={300}
+                      height={300}
+                      className="w-8 h-8"
+                    />
+        </SheetTitle>
+          
+        </SheetHeader>
+        <div className="  flex flex-col  items-start justify-center gap-4 mt-4">
+
+            <Link
+              href="/SignUp"
+              className="px-2 py-1  hover:text-gray-500"
+            >
+              Sign In
+            </Link>
+        <Link
+              href="/Store"
+              className="px-2  py-1  hover:text-gray-500"
+            >
+              Find a Store
+            </Link>
+            <Link
+              className="px-2 py-1  hover:text-gray-500"
+              href="/ContactUs"
+            >
+              Help
+            </Link>
+            <Link
+              className="px-2  py-1  hover:text-gray-500"
+              href="/JoinUs"
+            >
+              Join Us
+            </Link>
+
+
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
+                New and Featured
+              </Link>
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
+                Men
+              </Link>
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
+                Women
+              </Link>
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
+                Kids
+              </Link>
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
+                Sale
+              </Link>
+              <Link href="#" className="px-2 py-1  hover:text-gray-500">
+                SNKRS
+              </Link>
+            </div>
+
+
+        
+      </SheetContent>
+    </Sheet>
           </div>
-        </div>
-      </div>
-    </header>
+    </nav>
   );
 }
 

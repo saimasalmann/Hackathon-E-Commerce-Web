@@ -3,15 +3,15 @@ import Image from "next/image";
 import React from "react";
 
 const Essentials = () => {
-  return (
-    <div>
+  return ( 
+    <div className="w-full container mx-auto px-3 ">
       {/* Heading */}
-      <div className="mt-28 mb-12 text-center px-4">
+      <div className="mt-10 mb-10  ">
         <span className="text-xl font-semibold">The Essentials</span>
       </div>
 
       {/* Image Grid */}
-      <div className="flex flex-wrap justify-center gap-6 md:gap-10 mb-16 md:mb-28">
+      <div className="w-full flex flex-wrap mx-auto justify-center items-center gap-8 mb-16 md:mb-28">
         {/* Image 1 */}
         <div className="w-72 sm:w-80 md:w-96 h-[300px] md:h-[400px] overflow-hidden">
           <Image

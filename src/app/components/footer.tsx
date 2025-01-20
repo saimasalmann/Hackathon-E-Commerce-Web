@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-8 font-Helvetica">
-      <div className=" max-w-[1440px] mx-auto px-4">
+    <footer className="w-full bg-black text-white py-8 ">
+      <div className="container mx-auto px-3 ">
         {/* Top Section */}
         <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
           {/* First Column */}
           <div>
-            <p className="text-[10px] font-normal mb-4">FIND A STORE</p>
+            <p className="text-{12px] font-normal mb-4">FIND A STORE</p>
             <ul className="space-y-2 text-gray-400 text-[10px]">
               <li className="hover:text-white cursor-pointer">
                 BECOME A MEMBER
