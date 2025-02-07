@@ -1,9 +1,8 @@
-
 import Image from "next/image";
 import React from "react";
 
 const Essentials = () => {
-  return ( 
+  return (
     <div className="w-full container mx-auto px-3 ">
       {/* Heading */}
       <div className="mt-10 mb-10  ">

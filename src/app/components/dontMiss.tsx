@@ -4,9 +4,7 @@ import React from "react";
 const DontMiss = () => {
   return (
     <div className="container mx-auto px-3">
-      <div className="mt-10 mb-10  text-xl font-semibold ">
-          Don&apos;t Miss
-      </div>
+      <div className="mt-10 mb-10  text-xl font-semibold ">Don&apos;t Miss</div>
 
       <div className="flex justify-center ">
         <Image
@@ -24,14 +22,14 @@ const DontMiss = () => {
         </span>
         <br />
         <br />
- 
+
         <span>
           Your built-to-last, all-week wears—but with style only Jordan Brand
           can deliver.
         </span>
         <br />
- 
-        <button >Shop</button>
+
+        <button>Shop</button>
       </div>
     </div>
   );

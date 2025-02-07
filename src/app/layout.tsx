@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import TopBar from "./components/topbar";
-
+import { CartProvider } from "./context/page";
 
 
 const geistSans = localFont({
@@ -33,10 +33,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <CartProvider>
   <TopBar/> 
         <Navbar /> 
         {children}
         < Footer />
+        </CartProvider>
 
       </body>
     </html>

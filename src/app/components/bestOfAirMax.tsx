@@ -5,17 +5,17 @@ import React from "react";
 const BestOfAirMax = () => {
   return (
     <div className="container mx-auto px-3 py-6">
-          <div className=" text-xl font-semibold mb-5">Best of Air Max</div>
+      <div className=" text-xl font-semibold mb-5">Best of Air Max</div>
 
-        <div className="flex items-center justify-center">
-          <p className="text-sm md:text-lg">shop</p>
-          <div className="p-2 bg-gray-100 text-zinc-400 rounded-full hover:bg-gray-200 hover:text-zinc-800 mx-3">
-            <ChevronLeft />
-          </div>
-          <div className="p-2 bg-gray-100 text-zinc-400 rounded-full hover:bg-gray-200 hover:text-zinc-800">
-            <ChevronRight />
-          </div>
+      <div className="flex items-center justify-center">
+        <p className="text-sm md:text-lg">shop</p>
+        <div className="p-2 bg-gray-100 text-zinc-400 rounded-full hover:bg-gray-200 hover:text-zinc-800 mx-3">
+          <ChevronLeft />
         </div>
+        <div className="p-2 bg-gray-100 text-zinc-400 rounded-full hover:bg-gray-200 hover:text-zinc-800">
+          <ChevronRight />
+        </div>
+      </div>
 
       <div className="w-full mx-auto flex flex-wrap items-center justify-center gap-6 mt-10">
         <div>
@@ -27,20 +27,14 @@ const BestOfAirMax = () => {
               width={300}
               height={300}
             />
-            
           </div>
-         
-         
+
           <div className="flex justify-between items-center px-2 pt-2">
             <p className="text-base">Nike Air Max Pulse</p>
             <p className="text">₹ 13 995</p>
           </div>
 
-          
-            <span className="text-sm text-gray-700 px-2 ">
-              {`Women's`} Shoes
-            </span>
-          
+          <span className="text-sm text-gray-700 px-2 ">{`Women's`} Shoes</span>
         </div>
 
         <div>
@@ -52,7 +46,6 @@ const BestOfAirMax = () => {
               width={300}
               height={300}
             />
-          
           </div>
           <div className="flex justify-between items-center px-2 pt-2">
             <div className="text-base">Nike Air Max Pulse</div>
@@ -73,7 +66,6 @@ const BestOfAirMax = () => {
               width={300}
               height={300}
             />
-            
           </div>
           <div className="flex justify-between items-center px-2 pt-2">
             <div className="text-base">Nike Air Max Pulse</div>
@@ -96,7 +88,6 @@ const BestOfAirMax = () => {
               width={300}
               height={300}
             />
-            
           </div>
           <div className="flex justify-between px-2 pt-2">
             <div className="text-base">Nike Air Max Pulse</div>
@@ -108,8 +99,8 @@ const BestOfAirMax = () => {
           </div>
         </div>
       </div>
-</div>
-)
+    </div>
+  );
 };
 
 export default BestOfAirMax;

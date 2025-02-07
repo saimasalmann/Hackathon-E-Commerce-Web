@@ -81,7 +81,6 @@ const Gear = () => {
         {/* sub div Women's */}
 
         <div className="flex flex-col items-center justify-center">
-        
           {/* Arrow div */}
 
           <div className="flex items-center mb-5 ">
@@ -104,41 +103,46 @@ const Gear = () => {
               />
 
               <div className="flex justify-between items-center  px-2 pt-3">
-                <p className="text-xs font-bold pr-2">  Nike Dri-FIT ADV Run Division </p>
+                <p className="text-xs font-bold pr-2">
+                  {" "}
+                  Nike Dri-FIT ADV Run Division{" "}
+                </p>
                 <p className="text-sm">₹ 2 495</p>
               </div>
 
               <div className="flex flex-col">
-                <span className="text-sm text-gray-700 px-2 ">{`Women's`} Long-Sleeve </span>
+                <span className="text-sm text-gray-700 px-2 ">
+                  {`Women's`} Long-Sleeve{" "}
+                </span>
                 <span className="text-sm text-gray-700 px-2 ">Running Top</span>
               </div>
-           
-          </div>
+            </div>
 
             <div>
-            <Image
-              src={"/gear-4.png"}
-              alt="Women dress"
-              width={280}
-              height={250}
-            />
-            <div className="flex justify-between items-center px-2 pt-2">
-              <p className="text-sm font-bold pr-2">Nike Fast</p>
-              <p className="text-sm">₹ 3 795</p>
-            </div>
+              <Image
+                src={"/gear-4.png"}
+                alt="Women dress"
+                width={280}
+                height={250}
+              />
+              <div className="flex justify-between items-center px-2 pt-2">
+                <p className="text-sm font-bold pr-2">Nike Fast</p>
+                <p className="text-sm">₹ 3 795</p>
+              </div>
 
-            <div className="flex flex-col">
-              <span className="text-sm text-gray-700 px-2 ">
-                {`Women's`} Mid-Rise 7/8 Running</span>
-              <span className="text-sm text-gray-700 px-2 "> Leggings with Pockets </span>
+              <div className="flex flex-col">
+                <span className="text-sm text-gray-700 px-2 ">
+                  {`Women's`} Mid-Rise 7/8 Running
+                </span>
+                <span className="text-sm text-gray-700 px-2 ">
+                  {" "}
+                  Leggings with Pockets{" "}
+                </span>
+              </div>
             </div>
-        
-        
           </div>
-
         </div>
       </div>
-    </div>
     </div>
   );
 };

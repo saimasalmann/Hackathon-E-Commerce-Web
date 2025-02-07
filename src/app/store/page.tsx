@@ -3,19 +3,6 @@
 
 import React, { useState } from "react";
 
-// Define the props for the StoreMarker component
-// interface StoreMarkerProps {
-//   lat: number;
-//   lng: number;
-//   text: string;
-// }
-
-// Marker Component for the Map
-// const StoreMarker: React.FC<StoreMarkerProps> = ({ text }) => (
-//   <div className="text-black font-semibold bg-white px-3 py-2 rounded-md shadow-md">
-//     <div>{text}</div>
-//   </div>
-// );
 
 const FindStore = () => {
   const [searchTerm, setSearchTerm] = useState("");
